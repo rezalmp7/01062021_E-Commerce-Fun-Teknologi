@@ -135,4 +135,49 @@ class Profil extends CI_Controller {
             redirect(base_url('profil?error=photo gagal diupdate'));
         }
     }
+    function download
+    {
+        $session = $this->session->userdata();
+        $get = $this->input->get();
+
+        $id_session = $session['ecommerce_fun_id'];
+        $id_produk = $get['id'];
+
+        //cek id_user
+
+        $where = array(
+            'id_produk' => $id_produk,
+            'id_pelanggan' => $id_session 
+        );
+        $cek_produk = $this->M_admin->select_where('done', $where)->num_rows();
+
+        if($cek_produk > 0)
+        {
+            $where_produk = array(
+                'id' => $id_produk, 
+            );
+            $produk = $this->M_admin->select_select_where('link', 'produk', $where_produk)->row_array();
+
+            redirect($produk['link']);
+        }
+        else {
+            reidrect(base_url());
+        }
+    }
+    function cetak
+    {
+        $get = $this->input->get();
+
+        $where_transaksi = array(
+            'id' => $get['id'], 
+        );
+        $where_pesanan = array(
+            'id_transaksi' => $get['id'], 
+        );
+        
+        $transaksi = $this->M_admin->select_where('transaksi')->row_array();
+        $pesanan = $this->M_admin->select_where('pesanan')->result();
+
+        $this->load->view('cetak_invoice');
+    }
 }
