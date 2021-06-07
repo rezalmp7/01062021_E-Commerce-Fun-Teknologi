@@ -116,7 +116,7 @@
                                                         <span class="viewcart_produk"></span>
                                                         <span
                                                             class="uk-padding-small uk-padding-remove-vertical uk-display-block uk-width-1-1 uk-text-center uk-animation-slide-bottom viewcart_produk">
-                                                            <a href="<?php echo $b->link; ?>" target="_blank"
+                                                            <a href="<?php echo base_url(); ?>profil/download?id=<?php echo $b->id; ?>" target="_blank"
                                                                 class="uk-padding-small uk-padding-remove-vertical">
                                                                 <span class="iconify" data-icon="cil:cloud-download" data-inline="false"></span>
                                                             </a>
@@ -236,7 +236,8 @@
                                                             </div>
                                                             <div class="uk-width-1-1 uk-text-right uk-margin-medium-top">
                                                                 <div class="uk-padding-small-left uk-margin-remove uk-display-inline">
-                                                                    <a href="<?php echo $a->pdf_url; ?>" class="uk-button uk-button-primary uk-button-small">Downnload Panduan Bayar + Invoice</a>
+                                                                    <a href="<?php echo base_url(); ?>profil/cetak?id=<?php echo $a->id; ?>" class="uk-button uk-button-primary uk-button-small">Invoice</a>
+                                                                    <a href="<?php echo $a->pdf_url; ?>" class="uk-button uk-button-primary uk-button-small">Downnload Panduan Bayar</a>
                                                                 </div>
                                                             </div>
                                                         </div>

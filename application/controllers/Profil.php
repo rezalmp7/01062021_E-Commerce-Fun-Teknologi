@@ -135,7 +135,7 @@ class Profil extends CI_Controller {
             redirect(base_url('profil?error=photo gagal diupdate'));
         }
     }
-    function download
+    function download()
     {
         $session = $this->session->userdata();
         $get = $this->input->get();
@@ -164,20 +164,37 @@ class Profil extends CI_Controller {
             reidrect(base_url());
         }
     }
-    function cetak
+    function cetak()
     {
         $get = $this->input->get();
 
         $where_transaksi = array(
             'id' => $get['id'], 
         );
-        $where_pesanan = array(
-            'id_transaksi' => $get['id'], 
+        $where_pending = array(
+            'id_transaction' => $get['id'], 
         );
-        
-        $transaksi = $this->M_admin->select_where('transaksi')->row_array();
-        $pesanan = $this->M_admin->select_where('pesanan')->result();
 
-        $this->load->view('cetak_invoice');
+        
+        $transaksi = $this->M_admin->select_where('transaksi', $where_transaksi)->row_array();
+        $pending = $this->M_admin->select_select_where_join_2table_type('produk.nama, produk.harga', 'pending', 'produk', 'pending.id_produk = produk.id', $where_pending, 'left')->result();
+
+        $where_pelanggan = array(
+            'id' => $transaksi['id_pelanggan'], 
+        );
+        $where_kupon = array(
+            'kode' => $transaksi['kupon'], 
+        );
+        $kupon = $this->M_admin->select_where('promo', $where_kupon)->row_array();
+        $pelanggan = $this->M_admin->select_where('pelanggan', $where_pelanggan)->row_array();
+
+        $data = array(
+            'transaksi' => $transaksi,
+            'pending' => $pending,
+            'pelanggan' => $pelanggan,
+            'kupon' => $kupon
+        );
+
+        $this->load->view('cetak_invoice', $data);
     }
 }
