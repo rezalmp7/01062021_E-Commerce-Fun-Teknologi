@@ -3,8 +3,8 @@
                 <div class="uk-padding-remove uk-margin-remove uk-width-1-1" uk-grid>
                     <div class="uk-padding uk-width-1-2@s" style="border-right: 1px solid rgb(233, 233, 233)">
                         <div class="uk-padding-small uk-margin-remove uk-width-1-1">
-                            <label class="uk-text-meta uk-padding-remove uk-margin-remove">Welcome</label>
-                            <h2 class="uk-text-large uk-text-bold uk-padding-remove uk-margin-remove">Regist for your account</h2>
+                            <label class="uk-text-meta uk-padding-remove uk-margin-remove">Selamat Datang</label>
+                            <h2 class="uk-text-large uk-text-bold uk-padding-remove uk-margin-remove">Daftar</h2>
                             <form class="uk-form-stacked uk-margin-medium-top" method="POST" action="<?php echo base_url(); ?>login/aksi_daftar">
                                 <div class="uk-margin">
                                     <label class="uk-form-label" for="form-stacked-text">Nama</label>
@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-margin">
-                                    <label class="uk-form-label" for="form-stacked-text">Contact</label>
+                                    <label class="uk-form-label" for="form-stacked-text">Kontak</label>
                                 </div>
                                 <div class="uk-margin">
                                     <label class="uk-form-label" for="form-stacked-text">Email</label>
@@ -64,15 +64,15 @@
                                 </div>
                                 <div class="uk-margin">
                                     <div class="uk-form-controls">
-                                        <input class="uk-button uk-button-primary uk-input uk-float-right" type="submit" value="Register Now">
+                                        <input class="uk-button uk-button-primary uk-input uk-float-right" type="submit" value="Daftar Sekarang">
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="uk-padding uk-width-1-2@s">
-                        <label class="uk-text-meta uk-padding-remove uk-margin-remove">Welcome Back</label>
-                        <h2 class="uk-text-large uk-text-bold uk-padding-remove uk-margin-remove">Login to your account</h2>
+                        <label class="uk-text-meta uk-padding-remove uk-margin-remove">Selamat Datang Kembali</label>
+                        <h2 class="uk-text-large uk-text-bold uk-padding-remove uk-margin-remove">Masuk</h2>
                         <form class="uk-form-stacked uk-margin-medium-top" method="POST" action="<?php echo base_url(); ?>login/aksi_login">
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="form-stacked-text">Username</label>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="uk-margin">
                                 <div class="uk-form-controls">
-                                    <input class="uk-button uk-button-primary uk-input uk-float-right" type="submit" value="Login Now">
+                                    <input class="uk-button uk-button-primary uk-input uk-float-right" type="submit" value="Masuk">
                                 </div>
                             </div>
                         </form>

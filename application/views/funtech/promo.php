@@ -13,8 +13,8 @@
                                         <th class="fun-poppins-semi-bold">No</th>
                                         <th class="fun-poppins-semi-bold">Nama</th>
                                         <th class="fun-poppins-semi-bold">Kode</th>
-                                        <th class="fun-poppins-semi-bold">Tanggal Start</th>
-                                        <th class="fun-poppins-semi-bold">Tanggal End</th>
+                                        <th class="fun-poppins-semi-bold">Tanggal Mulai</th>
+                                        <th class="fun-poppins-semi-bold">Tanggal Selesai</th>
                                         <th class="fun-poppins-semi-bold">Aksi</th>
                                     </tr>
                                 </thead>

@@ -62,7 +62,7 @@
                                 class="label uk-padding-small uk-padding-remove-right uk-padding-remove-bottom uk-margin-small-top">
                                 User</li>
                             <li class="<?php if($page=='user') echo 'uk-active'; ?>"><a href="<?php echo base_url(); ?>funtech/user"><span class="iconify" data-icon="ant-design:user-outlined"
-                                        data-inline="false"></span> User</a></li>
+                                        data-inline="false"></span> Pengguna</a></li>
                             <li class="<?php if($page=='pelanggan') echo 'uk-active'; ?>"><a href="<?php echo base_url(); ?>funtech/pelanggan"><span class="iconify" data-icon="ant-design:user-outlined"
                                         data-inline="false"></span> Pelanggan</a></li>
                             <li class="label uk-padding-small uk-padding-remove-right uk-padding-remove-bottom ">Laporan
@@ -76,7 +76,7 @@
                             <li class="<?php if($page=='kategori') echo 'uk-active'; ?>"><a href="<?php echo base_url(); ?>funtech/kategori"><span class="iconify" data-icon="carbon:product"
                                         data-inline="false"></span> Kategori</a></li>
                             <li class="<?php if($page=='comment') echo 'uk-active'; ?>"><a href="<?php echo base_url(); ?>funtech/comment"><span class="iconify" data-icon="bx:bx-comment-error"
-                                        data-inline="false"></span> New Comment</a></li>
+                                        data-inline="false"></span> Ulasan</a></li>
                             <li class="label uk-padding-small uk-padding-remove-right uk-padding-remove-bottom ">Promo
                             </li>
                             <li class="<?php if($page=='promo') echo 'uk-active'; ?>"><a href="<?php echo base_url(); ?>funtech/promo"><span class="iconify" data-icon="bx:bx-award"
@@ -84,7 +84,7 @@
                             <li class="label uk-padding-small uk-padding-remove-right uk-padding-remove-bottom ">Website
                             </li>
                             <li class="<?php if($page=='slideshow') echo 'uk-active'; ?>"><a href="<?php echo base_url(); ?>funtech/slideshow"><span class="iconify" data-icon="ri:slideshow-2-line"
-                                        data-inline="false"></span> Slideshow</a></li>
+                                        data-inline="false"></span> Tayangan Slide</a></li>
                         </ul>
                     </div>
                 </div>
@@ -168,8 +168,7 @@
                                 <div class="uk-padding-remove uk-margin-remove uk-text-center">
                                     <span class="uk-padding-remove uk-margin-remove"><?php echo $this->session->userdata('ecommerce_admin_nama'); ?></span>
                                     <hr class="uk-padding-remove uk-margin-remove">
-                                    <span class="uk-visible@s uk-padding-remove uk-margin-remove ket">Admin
-                                        Account</span>
+                                    <span class="uk-visible@s uk-padding-remove uk-margin-remove ket">Akun Admin</span>
                                 </div>
                             </a>
                             <div uk-dropdown="mode: click">

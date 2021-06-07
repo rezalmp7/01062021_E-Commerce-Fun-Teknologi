@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-text">Contact</label>
+                                <label class="uk-form-label" for="form-stacked-text">Kontak</label>
                             </div>
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="form-stacked-text">Email</label>

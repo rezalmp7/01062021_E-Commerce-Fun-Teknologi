@@ -26,7 +26,7 @@
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo $produk->kode; ?></p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
-                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Link</label>
+                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Tautan</label>
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><a href="<?php echo $produk->link; ?>"><?php echo $produk->link; ?></a></p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
@@ -34,7 +34,7 @@
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo "Rp " . number_format($produk->harga,0,',','.'); ?></p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
-                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Tanggal Input</label>
+                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Tanggal Masuk</label>
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo date('d F Y', strtotime($produk->create_at)); ?></p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-margin-remove">

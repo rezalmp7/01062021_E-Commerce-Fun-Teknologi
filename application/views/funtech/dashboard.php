@@ -2,7 +2,7 @@
                 <div class="uk-width-1-1 uk-padding-remove uk-margin-remove" id="isi_content">
                     <div class="uk-width-1-1 uk-padding-remove uk-margin-remove">
                         <div class="uk-width-1-1 uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom">
-                            <h2 class="fun-poppins-semi-bold uk-padding-remove uk-margin-remove">Goals This Month</h2>
+                            <h2 class="fun-poppins-semi-bold uk-padding-remove uk-margin-remove">Capaian Bulan Ini</h2>
                         </div>
                         <div class="uk-width-1-1 uk-child-width-1-3@s uk-padding-small uk-padding-remove-horizontal uk-margin-remove uk-grid-match" uk-grid>
                             <div class="uk-padding-small uk-margin-remove goals">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="uk-width-1-1 uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove" id="rating">
                         <div class="uk-width-1-1 uk-padding- uk-padding-remove-horizontal uk-padding-remove-bottom">
-                            <h2 class="fun-poppins-semi-bold uk-padding-small uk-padding-remove-horizontal uk-padding-remove-top uk-margin-remove">Rating</h2>
+                            <h2 class="fun-poppins-semi-bold uk-padding-small uk-padding-remove-horizontal uk-padding-remove-top uk-margin-remove">Peringkat</h2>
                         </div>
                         <div class="uk-width-1-1 uk-padding uk-padding-remove-vertical uk-padding-remove-left uk-margin-remove">
                             <div class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-top uk-margin-remove uk-width-1-1 cart" uk-grid>
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="uk-width-expand" style="line-height: 80%;">
                                     <progress class="uk-progress uk-margin-remove uk-padding-remove" value="<?php echo $avg_produk; ?>" max="100"></progress><br>
-                                    <span class="uk-padding-remove uk-margin-remove fun-poppins uk-text-small">Rating Produk</span>
+                                    <span class="uk-padding-remove uk-margin-remove fun-poppins uk-text-small">Peringkat Produk</span>
                                 </div>
                                 <div style="width: 20px; height: 20px" class="uk-margin-remove fun-poppins">
                                     <?php echo $avg_produk; ?>%

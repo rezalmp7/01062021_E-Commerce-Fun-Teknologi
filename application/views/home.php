@@ -412,8 +412,7 @@
                                     </div>
                                     <div class="uk-width-1-1" style="clear: both">
                                         <a href="<?php echo base_url(); ?>produk/search?kategori=<?php echo $d['id']; ?>"
-                                            class="uk-button uk-button-default uk-button-small uk-padding-small uk-padding-remove-vertical uk-margin-bottom uk-margin-left">Check
-                                            now <span class="iconify" data-icon="bi:arrow-right-short" data-inline="false"></span></a>
+                                            class="uk-button uk-button-default uk-button-small uk-padding-small uk-padding-remove-vertical uk-margin-bottom uk-margin-left">Lihat <span class="iconify" data-icon="bi:arrow-right-short" data-inline="false"></span></a>
                                     </div>
                                 </div>
                             </div>

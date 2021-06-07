@@ -45,20 +45,20 @@
                         <div class="fun-poppins uk-padding-small uk-padding-remove-horizontal">Kategori : <?php echo $produk->namaKategori; ?></div>
                         <div class="fun-poppins uk-padding-small uk-padding-remove-horizontal">Developer : Fun Technology</div>
                         <div class="uk-padding-small uk-padding-remove-horizontal">
-                            <a href="<?php echo base_url(); ?>cart/tambah?id=<?php echo $produk->id; ?>" class="fun-button-1 uk-button uk-button-large uk-border-rounded"><span class="iconify uk-text-large" data-icon="eva:shopping-bag-outline" data-inline="false"></span> Add to cart</a>
-                            <a href="<?php echo base_url(); ?>wishlist/tambah?id=<?php echo $produk->id; ?>" class="fun-button-1 uk-button uk-button-large uk-border-rounded"><span class="iconify uk-text-large" data-icon="akar-icons:heart" data-inline="false"></span> Add to Wishlist</a>
+                            <a href="<?php echo base_url(); ?>cart/tambah?id=<?php echo $produk->id; ?>" class="fun-button-1 uk-button uk-button-large uk-border-rounded"><span class="iconify uk-text-large" data-icon="eva:shopping-bag-outline" data-inline="false"></span> Tambah Ke Keranjang</a>
+                            <a href="<?php echo base_url(); ?>wishlist/tambah?id=<?php echo $produk->id; ?>" class="fun-button-1 uk-button uk-button-large uk-border-rounded"><span class="iconify uk-text-large" data-icon="akar-icons:heart" data-inline="false"></span> Tambah Ke Suka</a>
                         </div>
                         <div class="uk-padding-remove uk-margin-remove fun-poppins" id="share">
                             <!-- <span class="uk-padding uk-padding-remove-vertical uk-padding-remove-left">Share: <a href="#"><span class="iconify" data-icon="eva:facebook-outline" data-inline="false"></span></a> <a href="#"><span class="iconify" data-icon="feather:twitter" data-inline="false"></span></a> <a href="#"><span class="iconify" data-icon="eva:linkedin-outline" data-inline="false"></span></a> <a href="#"><span class="iconify" data-icon="bi:whatsapp" data-inline="false"></span></a> <a href="#"><span class="iconify" data-icon="ph:telegram-logo-bold" data-inline="false"></span></a></span> -->
-                            <span style="white-space: nowrap;"><span class="iconify" data-icon="akar-icons:heart" data-inline="false"></span> Favorite (<?php echo $jml_like->nilai; ?>)</span>
+                            <span style="white-space: nowrap;"><span class="iconify" data-icon="akar-icons:heart" data-inline="false"></span> Suka (<?php echo $jml_like->nilai; ?>)</span>
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div id="body_mid">
                     <ul id="tab" uk-tab>
-                        <li><a href="#">Description</a></li>
-                        <li><a href="#">Review</a></li>
+                        <li><a href="#">Deskripsi</a></li>
+                        <li><a href="#">Ulasan</a></li>
                     </ul>
                     
                     <ul class="uk-switcher uk-margin" id="deskripsi_produk">

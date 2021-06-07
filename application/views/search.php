@@ -36,15 +36,15 @@
             <div class="uk-padding-large uk-padding-remove-bottom uk-clearfix" id="body">
                 <div class="uk-visible@l uk-width-1-6 uk-float-left uk-padding-remove uk-margin-remove">
                     <div class="uk-width-1-1 uk-margin-medium-top">
-                        <a href="#" class="uk-width-1-1 uk-padding-remove-horizontal uk-text-center fun-poppins-semi-bold uk-button uk-button-text"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span> back</a>
+                        <a href="#" class="uk-width-1-1 uk-padding-remove-horizontal uk-text-center fun-poppins-semi-bold uk-button uk-button-text"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span> Kembali</a>
                         <div class="uk-width-1-1 uk-text-center uk-padding-small uk-padding-remove-horizontal" id="filter">
-                            <h5 class="fun-poppins-semi-bold">Filters</h5>
-                            <a href="?kategori=all&price=all&sortBy=<?php echo $sortBy; ?>&page=<?php echo $page; ?>" class="uk-button uk-button-text">Clear Filter</a>
+                            <h5 class="fun-poppins-semi-bold">Saring</h5>
+                            <a href="?kategori=all&price=all&sortBy=<?php echo $sortBy; ?>&page=<?php echo $page; ?>" class="uk-button uk-button-text">Hapus Saring</a>
                         </div>
                         <div class="uk-width-1-1 uk-display-block">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true;">
                                 <li class="uk-parent uk-open">
-                                    <a class="fun-poppins-semi-bold link-black" href="#" aria-expanded="true">Category</a>
+                                    <a class="fun-poppins-semi-bold link-black" href="#" aria-expanded="true">Kategori</a>
                                     <ul class="uk-nav-sub">
                                         <?php
                                         foreach ($data_kategori as $a) {
@@ -56,7 +56,7 @@
                                     </ul>
                                 </li>
                                 <li class="uk-parent uk-open">
-                                    <a href="#" class="fun-poppins-semi-bold link-black"  aria-expanded="true">Price</a>
+                                    <a href="#" class="fun-poppins-semi-bold link-black"  aria-expanded="true">Harga</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="?kategori=<?php echo $kategori; ?>&price=0 AND 500000&sortBy=<?php echo $sortBy; ?>&page=<?php echo $page; ?>" class="<?php if($price=='0 AND 500000') echo 'fun-active '; ?>link-black">Rp 0 - Rp 500.0000</a></li>
                                         <li><a href="?kategori=<?php echo $kategori; ?>&price=500000 AND 1000000&sortBy=<?php echo $sortBy; ?>&page=<?php echo $page; ?>" class="<?php if($price=='500000 AND 1000000') echo 'fun-active '; ?>link-black">Rp 500.0000 - Rp 1.000.0000</a></li>
@@ -75,9 +75,9 @@
                 <div class="uk-width-1-1 uk-width-5-6@l uk-float-right uk-padding-remove uk-margin-remove">
                     <!-- ShordBy Website -->
                     <div class="uk-visible@l uk-width-1-1 uk-padding-small uk-margin-remove" id="sortBy">
-                        <span class="uk-padding-small uk-padding-remove-vertical uk-padding-remove-left">13 Items</span>
+                        <span class="uk-padding-small uk-padding-remove-vertical uk-padding-remove-left">13 Barang</span>
                         <span class="uk-padding uk-padding-remove-vertical">
-                            Sort By 
+                            Sortir 
                             <button class="uk-button uk-button-default uk-button-small uk-margin-small-left" type="button"><?php if($sortBy == 'terbaru') echo 'Terbaru'; elseif($sortBy == 'terlama') echo 'Terlama'; elseif($sortBy == 'za') echo 'Nama Z-A'; else echo 'Nama A-Z'; ?> <span class="iconify" data-icon="dashicons:arrow-down" data-inline="false"></span></button>
                             <div class="uk-padding-remove" uk-dropdown="mode: click">
                                 <ul class="uk-list uk-list-divider uk-padding-remove">
@@ -89,7 +89,7 @@
                             </div>
                         </span>
                         <span class="uk-padding uk-padding-remove-vertical">
-                            Show
+                            Menunjukkan
                             <button class="uk-button uk-button-default uk-button-small uk-margin-small-left uk-margin-large-right" type="button"><?php if(isset($_GET['page'])) echo $_GET['page']; else echo 10; ?> <span class="iconify" data-icon="dashicons:arrow-down" data-inline="false"></span></button>
                             <div class="uk-padding-remove" uk-dropdown="mode: click">
                                 <ul class="uk-list uk-list-divider uk-padding-remove">

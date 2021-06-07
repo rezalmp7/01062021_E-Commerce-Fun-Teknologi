@@ -17,7 +17,7 @@
                                 <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo $pelanggan->alamat; ?></p>
                             </div>
                             <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
-                                <label class="uk-text-bold uk-padding-remove uk-margin-remove">Contact</label>
+                                <label class="uk-text-bold uk-padding-remove uk-margin-remove">Kontak</label>
                                 <div class="uk-text-small uk-padding-remove uk-margin-remove">
                                     <table>
                                         <tr>

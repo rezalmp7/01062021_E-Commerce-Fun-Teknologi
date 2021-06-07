@@ -34,7 +34,7 @@ class Laporan_penjualan extends CI_Controller {
 		$header['page'] = 'laporan_penjualan';
         $header['page_name'] = "Data Laporan Penjualan";
 
-        $data['laporan_penjualan'] = $this->M_admin->select_select_join_2table_type_orderBy('transaksi.id, transaksi.status, transaksi.total_bayar, pelanggan.nama as namaPelanggan, transaksi.checkout_at', 'transaksi', 'pelanggan', 'transaksi.id_pelanggan=pelanggan.id', 'left', 'transaksi.checkout_at DESC')->result();
+        $data['laporan_penjualan'] = $this->M_admin->select_select_join_2table_type_orderBy('transaksi.id, transaksi.status, transaksi.total_bayar, pelanggan.nama as nama, transaksi.checkout_at', 'transaksi', 'pelanggan', 'transaksi.id_pelanggan=pelanggan.id', 'left', 'transaksi.checkout_at DESC')->result();
 
 		$this->load->view('funtech/layout/header', $header);
 		$this->load->view('funtech/laporan_penjualan', $data);

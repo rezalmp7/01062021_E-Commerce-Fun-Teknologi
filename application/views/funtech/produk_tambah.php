@@ -33,9 +33,9 @@
                                     </div>
                                 </div>
                                 <div class="uk-margin">
-                                    <label class="uk-form-label" for="form-stacked-text">Link</label>
+                                    <label class="uk-form-label" for="form-stacked-text">Tautan</label>
                                     <div class="uk-form-controls">
-                                        <input class="uk-input" id="form-stacked-text" type="text" name="link" placeholder="Link.." required>
+                                        <input class="uk-input" id="form-stacked-text" type="text" name="link" placeholder="Tautan.." required>
                                     </div>
                                 </div>
                                 <div class="uk-margin">

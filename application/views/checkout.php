@@ -1,7 +1,7 @@
 
             <div class="uk-padding-large uk-clearfix" id="body">
                 <div class="uk-width-1-1" id="body_head">
-                    <h4 class="uk-padding-remove uk-margin-remove fun-poppins-semi-bold">Checkout</h4>
+                    <h4 class="uk-padding-remove uk-margin-remove fun-poppins-semi-bold">Periksa</h4>
                 </div>
                 <div class="uk-width-1-1 uk-padding uk-padding-remove-horizontal uk-margin-remove" id="body_body">
                     <div class="uk-padding-small uk-padding-remove-horizontal">
@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="uk-width-1-1 uk-text-right uk-margin-medium-top">
                                         <div class="uk-padding-small-left uk-margin-remove uk-display-inline">
-                                            <a href="<?php echo $data_transaksi->pdf_url; ?>" class="uk-button uk-button-primary uk-button-small">Downnload Panduan Bayar</a>
+                                            <a href="<?php echo $data_transaksi->pdf_url; ?>" class="uk-button uk-button-primary uk-button-small">Unduh Panduan Bayar</a>
                                         </div>
                                     </div>
                                 </div>

@@ -32,7 +32,7 @@ class Comment extends CI_Controller {
 	public function index()
 	{
 		$header['page'] = 'comment';
-        $header['page_name'] = "Comment Produk";
+        $header['page_name'] = "Ulasan Produk";
 
         $data['comment'] = $this->M_admin->select_select_join_2table_type_orderBy('comment.comment_at, comment.reply, produk.nama, comment.comment, comment.id', 'comment', 'produk', 'comment.id_produk = produk.id', 'left', 'comment.comment_at DESC')->result();
 
@@ -43,7 +43,7 @@ class Comment extends CI_Controller {
     public function answer()
     {
         $header['page'] = "comment";
-        $header['page_name'] = "Answer";
+        $header['page_name'] = "Jawab";
 
         $get = $this->input->get();
 

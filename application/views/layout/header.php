@@ -114,7 +114,7 @@ HEADER                      BODY                    FOOTER
                                 ?>
                                 <li class="uk-button uk-padding-remove-horizontal uk-text-center"><a class="<?php if(isset($kat_active)) { if($kat_active == 'kategori') echo 'fun-active'; } ?> uk-display-block"
                                         href="<?php echo base_url(); ?>produk/search?kategori=all"><span class="iconify" data-icon="bi:check-all"
-                                            data-inline="false"></span><br>All</a></li>
+                                            data-inline="false"></span><br>Semua</a></li>
                             </ul>
                         </div>
             
@@ -157,8 +157,8 @@ HEADER                      BODY                    FOOTER
                                 <span class="uk-text-small"><?php echo $cek_status['ecommerce_fun_email']; ?></span>
                                 <hr class="uk-padding-remove uk-margin-small-top uk-margin-remove-bottom">
                                 <ul class="uk-nav uk-dropdown-nav uk-padding-remove">
-                                    <li class="uk-active"><a class="uk-padding-remove" href="<?php echo base_url(); ?>profil">Profile</a></li>
-                                    <li><a class="uk-padding-remove" href="<?php echo base_url(); ?>login/logout">Logout</a></li>
+                                    <li class="uk-active"><a class="uk-padding-remove" href="<?php echo base_url(); ?>profil">Profil</a></li>
+                                    <li><a class="uk-padding-remove" href="<?php echo base_url(); ?>login/logout">Keluar</a></li>
                                 </ul>
                             </div>
                             <?php
@@ -185,7 +185,7 @@ HEADER                      BODY                    FOOTER
                                 }
                                 ?>
                                 <li><a class="uk-display-block" href="<?php echo base_url(); ?>produk/search?kategori=all"><span class="iconify" data-icon="bi:check-all"
-                                            data-inline="false"></span> All</a></li>
+                                            data-inline="false"></span> Semua</a></li>
                             </ul>
                     
                         </div>

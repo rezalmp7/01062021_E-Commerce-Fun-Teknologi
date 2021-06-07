@@ -2,7 +2,7 @@
             <div class="uk-padding-large uk-clearfix" id="body">
                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-horizontal">
                     <div class="uk-width-1-1 uk-padding-remove uk-margin-remove" id="body_head">
-                        <h4 class="uk-width-1-1 uk-padding-remove uk-margin-remove fun-poppins-semi-bold">Wishlist</h4>
+                        <h4 class="uk-width-1-1 uk-padding-remove uk-margin-remove fun-poppins-semi-bold">Daftar Suka</h4>
                     </div>
                     <div class="uk-width-1-1 uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-clearfix uk-margin-medium-bottom">
                         <?php
@@ -68,7 +68,7 @@
                         ?>
                     </div>
                     <div class="uk-width-1-1 uk-text-center">
-                        <a href="<?php echo base_url(); ?>produk/search" class="uk-button uk-button-large uk-border-rounded uk-button-primary">Discover more products <span class="iconify" data-icon="akar-icons:arrow-right" data-inline="false"></span></a>
+                        <a href="<?php echo base_url(); ?>produk/search" class="uk-button uk-button-large uk-border-rounded uk-button-primary">Lanjut Lihat Barang <span class="iconify" data-icon="akar-icons:arrow-right" data-inline="false"></span></a>
                     </div>
                 </div>
             </div>

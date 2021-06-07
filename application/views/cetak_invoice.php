@@ -33,16 +33,16 @@
                 <table class="uk-table uk-table-small">
                     <tbody>
                         <tr>
-                            <th class="uk-margin-remove uk-padding-remove">Nama</th>
-                            <td class="uk-margin-remove uk-padding-remove">: <?php echo $pelanggan['nama']; ?></td>
+                            <th class="uk-margin-remove uk-padding-remove" style="vertical-align: top;">Nama </th>
+                            <td class="uk-margin-remove uk-padding-remove" style="vertical-align: top;">: <?php echo $pelanggan['nama']; ?></td>
                         </tr>
                         <tr>
-                            <th class="uk-margin-remove uk-padding-remove">Alamat</th>
-                            <td class="uk-margin-remove uk-padding-remove">: <?php echo $pelanggan['alamat']; ?></td>
+                            <th class="uk-margin-remove uk-padding-remove" style="vertical-align: top;">Alamat </th>
+                            <td class="uk-margin-remove uk-padding-remove" style="vertical-align: top;">: <?php echo $pelanggan['alamat']; ?></td>
                         </tr>
                         <tr>
-                            <th class="uk-margin-remove uk-padding-remove">Email</th>
-                            <td class="uk-margin-remove uk-padding-remove">: <?php echo $pelanggan['email']; ?></td>
+                            <th class="uk-margin-remove uk-padding-remove" style="vertical-align: top;">Email </th>
+                            <td class="uk-margin-remove uk-padding-remove" style="vertical-align: top;">: <?php echo $pelanggan['email']; ?></td>
                         </tr>
                     </tbody>
                 </table>
@@ -51,12 +51,12 @@
                 <table class="uk-table uk-table-small">
                     <tbody>
                         <tr>
-                            <th class="uk-padding-remove uk-margin-remove">Status</th>
-                            <td class="uk-padding-remove uk-margin-remove">: Lunas</td>
+                            <th class="uk-padding-remove uk-margin-remove" style="vertical-align: top;">Status </th>
+                            <td class="uk-padding-remove uk-margin-remove" style="vertical-align: top;">: <?php if($transaksi['status'] == 'checkout') echo 'Belum Bayar'; else echo 'Lunas'; ?></td>
                         </tr>
                         <tr>
-                            <th class="uk-padding-remove uk-margin-remove">Tgl Order</th>
-                            <td class="uk-padding-remove uk-margin-remove">: <?php echo date('d F Y, H:i:s', strtotime($transaksi['checkout_at'])); ?></td>
+                            <th class="uk-padding-remove uk-margin-remove" style="vertical-align: top;">Tgl Order </th>
+                            <td class="uk-padding-remove uk-margin-remove" style="vertical-align: top;">: <?php echo date('d F Y, H:i:s', strtotime($transaksi['checkout_at'])); ?></td>
                         </tr>
                     </tbody>
                 </table>

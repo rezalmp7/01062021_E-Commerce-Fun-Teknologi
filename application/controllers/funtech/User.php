@@ -32,7 +32,7 @@ class User extends CI_Controller {
 	public function index()
 	{
 		$header['page'] = 'user';
-        $header['page_name'] = "Data User";
+        $header['page_name'] = "Data Pengguna";
 
         $data['user'] = $this->M_admin->select_all('user')->result();
 
@@ -43,7 +43,7 @@ class User extends CI_Controller {
     public function edit()
     {
 		$header['page'] = 'user';
-        $header['page_name'] = "Edit User";
+        $header['page_name'] = "Edit Pengguna";
 
         $get = $this->input->get();
         
@@ -58,7 +58,7 @@ class User extends CI_Controller {
     public function tambah()
     {
         $header['page'] = 'user';
-        $header['page_name'] = "Tambah User";
+        $header['page_name'] = "Tambah Pengguna";
 
         $this->load->view('funtech/layout/header', $header);
         $this->load->view('funtech/user_tambah');

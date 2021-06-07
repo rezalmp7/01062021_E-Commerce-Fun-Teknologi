@@ -31,7 +31,7 @@
                                         <td><?php echo date('d-m-Y H:i:s', strtotime($a->checkout_at)); ?></td>
                                         <td><?php echo $a->nama; ?></td>
                                         <td>Rp <?php echo number_format($a->total_bayar, 0, ',', ' '); ?></td>
-                                        <td><?php echo $a->status; ?></td>
+                                        <td><?php if($a->status=='checkout') echo 'Pembayaran'; else echo 'Selesai'; ?></td>
                                         <td>
                                             <a href="<?php echo base_url(); ?>funtech/laporan_penjualan/info?id=<?php echo $a->id; ?>"
                                                 class="uk-button uk-button-small button-primary uk-border-rounded"><span

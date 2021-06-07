@@ -146,7 +146,7 @@
                                 <input type="hidden" name="potongan_kupon" value="<?php echo $potongan_kupon; ?>">
                                 <input type="hidden" name="harga_dibayar" value="<?php echo $harga_dibayar; ?>" required>
                             </form>
-                            <button id="pay-button" class="uk-button uk-button-primary uk-border-pill uk-border-large uk-float-right">Continue checkout</button>
+                            <button id="pay-button" class="uk-button uk-button-primary uk-border-pill uk-border-large uk-float-right">Lanjutkan</button>
                         </div>
                         <script type="text/javascript">
   

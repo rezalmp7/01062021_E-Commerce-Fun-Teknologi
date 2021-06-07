@@ -22,7 +22,7 @@ function rupiah($angka){
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo $promo->nama; ?></p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
-                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Discount</label>
+                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Diskon</label>
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo $promo->disc; ?>%</p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
@@ -38,7 +38,7 @@ function rupiah($angka){
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove"><?php echo rupiah($promo->harga_mulai).' - '.rupiah($promo->harga_akhir); ?></p>
                                 </div>
                                 <div class="uk-width-1-1 uk-padding-small uk-padding-remove-top uk-margin-remove">
-                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Produk Discount</label>
+                                    <label class="uk-text-bold uk-padding-remove uk-margin-remove">Produk Diskon</label>
                                     <p class="uk-text-small uk-padding-remove uk-margin-remove">
                                     <?php
                                     if($promo->syt_dsc == 'all')

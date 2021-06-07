@@ -9,7 +9,7 @@
                                         <th class="fun-poppins-semi-bold">Status</th>
                                         <th class="fun-poppins-semi-bold">Tanggal</th>
                                         <th class="fun-poppins-semi-bold">Produk</th>
-                                        <th class="fun-poppins-semi-bold">Comment</th>
+                                        <th class="fun-poppins-semi-bold">Ulasan</th>
                                         <th class="fun-poppins-semi-bold">Aksi</th>
                                     </tr>
                                 </thead>

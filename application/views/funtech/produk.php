@@ -19,9 +19,9 @@
                                             <tr>
                                                 <th class="fun-poppins-semi-bold">Kode</th>
                                                 <th class="fun-poppins-semi-bold">Nama</th>
-                                                <th class="fun-poppins-semi-bold">Discount</th>
+                                                <th class="fun-poppins-semi-bold">Diskon</th>
                                                 <th class="fun-poppins-semi-bold">Harga</th>
-                                                <th class="fun-poppins-semi-bold">link</th>
+                                                <th class="fun-poppins-semi-bold">Tautan</th>
                                                 <th class="fun-poppins-semi-bold">Aksi</th>
                                             </tr>
                                         </thead>
@@ -70,7 +70,7 @@
                                                 <th class="fun-poppins-semi-bold">Kode</th>
                                                 <th class="fun-poppins-semi-bold">Nama</th>
                                                 <th class="fun-poppins-semi-bold">Harga</th>
-                                                <th class="fun-poppins-semi-bold">Discount</th>
+                                                <th class="fun-poppins-semi-bold">Diskon</th>
                                                 <th class="fun-poppins-semi-bold">Aksi</th>
                                             </tr>
                                         </thead>

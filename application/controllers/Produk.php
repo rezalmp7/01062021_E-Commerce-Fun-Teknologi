@@ -108,7 +108,7 @@ class Produk extends CI_Controller {
 
 		$data['produk'] = $this->M_admin->fun_produk_search('produk.id, produk.nama, produk.harga, produk.discount, gambar_produk.src', 'produk', 'gambar_produk', 'produk.id=gambar_produk.id_produk', $where, $sortBy)->result();
 		
-        $data['produk_baru'] = $this->M_admin->select_select_join_2table_type_limit_groupBy_orderBy('produk.id, produk.nama, produk.harga, produk.discount, gambar_produk.src', 'produk', 'gambar_produk', 'produk.id=gambar_produk.id_produk', 'left', '10', 'produk.id', 'produk.create_at DESC')->result();
+        $data['produk_baru'] = $this->M_admin->select_select_join_2table_type_limit_groupBy_orderBy('produk.id, produk.nama, produk.harga, produk.discount, gambar_produk.src', 'produk', 'gambar_produk', 'produk.id=gambar_produk.id_produk', 'left', '6', 'produk.id', 'produk.create_at DESC')->result();
 
 		$this->load->view('layout/header', $header);
 		$this->load->view('search', $data);
@@ -155,7 +155,7 @@ class Produk extends CI_Controller {
 
 		$data['star'] = $this->M_admin->get_star();
 		
-        $data['produk_baru'] = $this->M_admin->select_select_join_2table_type_limit_groupBy_orderBy('produk.id, produk.nama, produk.harga, produk.discount, gambar_produk.src', 'produk', 'gambar_produk', 'produk.id=gambar_produk.id_produk', 'left', '10', 'produk.id', 'produk.create_at DESC')->result();
+        $data['produk_baru'] = $this->M_admin->select_select_join_2table_type_limit_groupBy_orderBy('produk.id, produk.nama, produk.harga, produk.discount, gambar_produk.src', 'produk', 'gambar_produk', 'produk.id=gambar_produk.id_produk', 'left', '6', 'produk.id', 'produk.create_at DESC')->result();
 
 		$this->load->view('layout/header', $header);
 		$this->load->view('produk_detail', $data);

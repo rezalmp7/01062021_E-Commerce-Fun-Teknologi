@@ -34,7 +34,7 @@
                                                 <div class="uk-margin" uk-margin>
                                                     <div uk-form-custom="target: true">
                                                         <input type="file" name="photo">
-                                                        <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Select file" disabled>
+                                                        <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Pilih File" disabled>
                                                     </div>
                                                     <button class="uk-button uk-button-primary uk-button-small uk-width-1-1"><span class="iconify" data-icon="akar-icons:pencil" data-inline="false"></span> Ganti Photo</button>
                                                 </div>
@@ -95,7 +95,7 @@
                                                 </div>
                                                 <div class="uk-width-1-1 uk-padding-remove uk-margin-medium-top uk-margin-remove-bottom">
                                                     <button type="submit" class="uk-button uk-button-primary uk-float-right"><span class="iconify" data-icon="bx:bx-save" data-inline="false"></span> Simpan</button>
-                                                    <a href="<?php echo base_url(); ?>login/logout" class="uk-button uk-button-danger uk-margin-small-right uk-float-right">Logout</a>
+                                                    <a href="<?php echo base_url(); ?>login/logout" class="uk-button uk-button-danger uk-margin-small-right uk-float-right">Keluar</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -140,7 +140,7 @@
                                     
                                         <ul class="uk-subnav uk-subnav-pill uk-flex-center">
                                             <li class="uk-margin-remove uk-padding-remove uk-active" uk-filter-control><a href="#" class="uk-button uk-button-default uk-padding-small uk-padding-large uk-padding-remove-vertical">Semua</a></li>
-                                            <li class="uk-margin-remove uk-padding-remove" uk-filter-control="[data-color='checkout']"><a href="#" class="uk-button uk-button-default uk-padding-small uk-padding-large uk-padding-remove-vertical">Checkout</a></li>
+                                            <li class="uk-margin-remove uk-padding-remove" uk-filter-control="[data-color='checkout']"><a href="#" class="uk-button uk-button-default uk-padding-small uk-padding-large uk-padding-remove-vertical">Pembayaran</a></li>
                                             <li class="uk-margin-remove uk-padding-remove" uk-filter-control="[data-color='done']"><a href="#" class="uk-button uk-button-default uk-padding-small uk-padding-large uk-padding-remove-vertical">Selesai</a></li>
                                         </ul>
                                     
@@ -156,14 +156,14 @@
                                                         {
                                                     ?>
                                                     <div class="uk-width-1-1 uk-padding-remove uk-margin-remove pending uk-text-left" id="status">
-                                                        <span class="iconify" data-icon="akar-icons:circle-fill" data-inline="false"></span> Checkout
+                                                        <span class="iconify" data-icon="akar-icons:circle-fill" data-inline="false"></span> Bayar
                                                     </div>
                                                     <?php
                                                         }
                                                         if ($a->status == 'done') {
                                                     ?>
                                                     <div class="uk-width-1-1 uk-padding-remove uk-margin-remove success uk-text-left" id="status">
-                                                        <span class="iconify" data-icon="akar-icons:circle-fill" data-inline="false"></span> Done
+                                                        <span class="iconify" data-icon="akar-icons:circle-fill" data-inline="false"></span> Selesai
                                                     </div>
                                                     <?php
                                                         }
